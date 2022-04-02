@@ -9,13 +9,17 @@ tertiary colour: #f8fafc
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .alert{
     background-color: #00b3fe;
     width: 100vw;
-    border-left: 1vw solid #1e293b;
+    border-left: 2vh solid #1e293b;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -24,15 +28,16 @@ tertiary colour: #f8fafc
     color: #f8fafc;
     vertical-align: middle;
     line-height: normal;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .alert:hover{
     background-color: #1e293b;
-    transition: ease 0.5s;
-    -webkit-transition: ease 0.5s;
-    -moz-transition: ease 0.5s;
-    -ms-transition: ease 0.5s;
-    -o-transition: ease 0.5s;
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 
 .closebtn{
@@ -70,6 +75,7 @@ nav.desktop .brand a img{
 nav.desktop a h2{
     display: table-cell;
     vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav.desktop .links{
@@ -87,4 +93,22 @@ nav.desktop .links a{
     text-decoration: none;
     color: #f8fafc;
     font-size: 2vh;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+nav.desktop .links a:hover{
+    background-color: #00b3fe;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+iframe{
+    display: block;
+    height: 94vh;
+    width: 100vw;
+    border: none;
+}
+
+.active{
+    background-color: #00b3fe;
 }

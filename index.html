@@ -7,7 +7,7 @@
     <!-- Style sheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100;300;500&family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home | GetProjects</title>
 
@@ -51,16 +51,53 @@
             <a href="#"><img src="icons/ico.png" srcset="icons/ico.png" alt="GetProjects"><h2>GetProjects</h2></a>
         </div>
         <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Arduino</a>
-            <a href="#">Web 3.0</a>
-            <a href="#">C/C++</a>
-            <a href="#">Circuit</a>
-            <a href="#">Deals</a>
-            <a href="#">Disclaimer</a>
-            <a href="#">About</a>
+            <a onclick="home()">Home</a>
+            <a onclick="arduino()">Arduino</a>
+            <a onclick="web3()">Web 3.0</a>
+            <a onclick="c()">C/C++</a>
+            <a onclick="circuit()">Circuit</a>
+            <a onclick="deals()">Deals</a>
+            <a onclick="disclaimer()">Disclaimer</a>
+            <a onclick="about()">About</a>
         </div>
     </nav>
+
+    <iframe id="frame" src=""></iframe>
+
+    <script>
+        function home() {
+            document.getElementById
+                ("frame").src = "pages/home.html";
+        }
+        function arduino() {
+            document.getElementById
+                ("frame").src = "pages/arduino.html";
+        }
+        function web3() {
+            document.getElementById
+                ("frame").src = "pages/web3.html";
+        }
+        function c() {
+            document.getElementById
+                ("frame").src = "pages/c,c++.html";
+        }
+        function circuit() {
+            document.getElementById
+                ("frame").src = "pages/circuits.html";
+        }
+        function deals() {
+            document.getElementById
+                ("frame").src = "pages/deals.html";
+        }
+        function disclaimer() {
+            document.getElementById
+                ("frame").src = "pages/disclaimer.html";
+        }
+        function about() {
+            document.getElementById
+                ("frame").src = "pages/about.html";
+        }
+    </script>
     <!-- navbar phone -->
 
     <!-- containers -->
