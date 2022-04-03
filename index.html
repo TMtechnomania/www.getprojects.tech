@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2108654491305511"
+     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100;300;500&family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home | GetProjects</title>
+    <title>GetProjects</title>
 
     <!-- favicons -->
     <link rel="shortcut icon" href="favicon/64.png" type="image/x-icon">
@@ -50,15 +52,15 @@
         <div class="brand">
             <a href="#"><img src="icons/ico.png" srcset="icons/ico.png" alt="GetProjects"><h2>GetProjects</h2></a>
         </div>
-        <div class="links">
-            <a onclick="home()">Home</a>
-            <a onclick="arduino()">Arduino</a>
-            <a onclick="web3()">Web 3.0</a>
-            <a onclick="c()">C/C++</a>
-            <a onclick="circuit()">Circuit</a>
-            <a onclick="deals()">Deals</a>
-            <a onclick="disclaimer()">Disclaimer</a>
-            <a onclick="about()">About</a>
+        <div id="links" class="links">
+            <a class="tabs active" id="defaultOpen" onclick="home()">Home</a>
+            <a class="tabs" onclick="arduino()">Arduino</a>
+            <a class="tabs" onclick="web3()">Web 3.0</a>
+            <a class="tabs" onclick="c()">C/C++</a>
+            <a class="tabs" onclick="circuit()">Circuit</a>
+            <a class="tabs" onclick="deals()">Deals</a>
+            <a class="tabs" onclick="disclaimer()">Disclaimer</a>
+            <a class="tabs" onclick="about()">About</a>
         </div>
     </nav>
 
@@ -97,6 +99,17 @@
             document.getElementById
                 ("frame").src = "pages/about.html";
         }
+        document.getElementById("defaultOpen").click();
+
+        var btnContainer = document.getElementById("links");
+        var a = btnContainer.getElementsByClassName("tabs");
+        for (var i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
     </script>
     <!-- navbar phone -->
 
