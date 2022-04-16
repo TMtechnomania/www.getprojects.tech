@@ -1,0 +1,41 @@
+<!-- use itemscope and itemprop for schema.org 
+    
+    <div itemscope itemtype=”http://schema.org/tech”>
+    <h2 itemprop=”description”>The best routers you’ll find online!</h2>
+<p>Address:</p>
+<span itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress”>
+<p itemprop=”streetAddress”>459 Humpback Road </p>
+<p itemprop=”addressLocality”>Rialto, Ca</p></span>
+<p>Tel: <span itemprop=”telephone”>909 574 3903</span></p>
+<p><a itemprop=”menu” href=”http:// http://www.techhaven.com/menu “>Click here to view our tasty range of dishes!</a></p>
+<p>We’re open:</p>
+<p itemprop=”openingHours”>Mon-Sat 8am – 10:30pm</p>
+<p itemprop=”openingHours”>Sun: 2pm – 8pm</p>
+</div>
+
+-->
+
+<!-- Using RDFa
+RDFa is an acronym for Resource Description Framework in Attributes. Essentially, RDFa is an extension to HTML5 and it was designed to aid users in marking up structured data.
+<div vocab=”http://schema.org/” typeof=”technology”>
+<div property=”address” typeof=”PostalAddress”>
+<h2 property=”description”>The best routers on the internet!</h2>
+<p>Address:</p>
+<div property=”address” typeof=”PostalAddress”>
+<p property=”streetAddress”>459 Humpback Road</p>
+<p property=”addressLocality”>Rialto, Ca</p>
+</div>
+<p>Tel: <span property=”telephone”>909 574 3903</span></p>
+<p><a property=”menu” href=”http://www.techhaven/menu”>Click here to view our best routers!</a></p>
+<p>We’re open:</p>
+<p property=”openingHours”>Mon-Sat 8am – 10:30pm</p>
+<p property=”openingHours”>Sun: 2pm – 8pm</p>
+</div>
+-->
+
+Add a <link> element with the attribute rel="canonical" to the <head> section of duplicate pages, pointing to the canonical page. For example:
+<link rel="canonical" href="https://example.com/dresses/green-dresses" />
+
+
+If the canonical page has a mobile variant, add a rel="alternate" link to it, pointing to the mobile version of the page:
+<link rel="alternate" media="only screen and (max-width: 640px)"  href="http://m.example.com/dresses/green-dresses">
