@@ -141,15 +141,6 @@ a{
         font-size: 2.5vmax;
     }
 
-    footer nav a i:hover{
-        transform: scale(1.1);
-        color: var(--primary);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-    }
-
     .slide-show{
         padding-top: 1vmax;
     }
@@ -256,12 +247,27 @@ a{
         font-size: 2.5vmin;
     }
 
-    footer nav a i:hover{
-        transform: scale(1.1);
-        color: var(--primary);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
+    
+
+    .slide-show{
+        padding-top: 1vmin;
+    }
+
+    .gallery-cell {
+        width: 66%;
+        height: 40vmin;
+        margin-right: 10px;
+        background: var(--text);
+        counter-increment: gallery-cell;
+      }
+      
+      /* cell number */
+    .gallery-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(gallery-cell);
+        line-height: 40vmin;
+        font-size: 80px;
+        color: white;
     }
 }
